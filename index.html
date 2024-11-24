@@ -2,15 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Test AR with Simple Model</title>
+    <title>My WebAR Experience</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/AR.js/aframe/build/aframe-ar.js"></script>
   </head>
   <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs>
+      <!-- استفاده از مارکر Hiro پیش‌فرض -->
       <a-marker preset="hiro">
-        <!-- مدل ساده -->
-        <a-box position="0 0.5 0" rotation="0 45 0" color="red"></a-box>
+        <!-- مدل سه‌بعدی اردک -->
+        <a-entity 
+          gltf-model="https://cdn.glitch.global/8b14b739-5f89-4672-9be7-fb9b39570631/duck_model.glb" 
+          scale="0.5 0.5 0.5" 
+          position="0 0 0" 
+          rotation="0 0 0">
+        </a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
