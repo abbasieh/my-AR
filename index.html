@@ -2,20 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>My WebAR Experience</title>
+    <title>Test Duck Model</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/AR.js/aframe/build/aframe-ar.js"></script>
   </head>
   <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs>
-      <!-- استفاده از مارکر Hiro پیش‌فرض -->
+      <!-- استفاده از مارکر Hiro -->
       <a-marker preset="hiro">
-        <!-- مدل سه‌بعدی -->
+        <!-- مدل اردک -->
         <a-entity 
-          gltf-model="https://drive.google.com/uc?export=view&id=1amYNujJdiq4uz_aFJ4sJam5hQFtdN6d1" 
-          scale="0.5 0.5 0.5" 
-          position="0 0 0" 
-          rotation="0 0 0">
+          gltf-model="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/glTF/Duck.gltf" 
+          scale="0.1 0.1 0.1" 
+          position="0 0 0">
         </a-entity>
       </a-marker>
       <a-entity camera></a-entity>
