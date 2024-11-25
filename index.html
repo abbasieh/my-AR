@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>AR Test Cube</title>
+    <title>AR Test Shapes</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/AR.js/aframe/build/aframe-ar.js"></script>
   </head>
@@ -10,8 +10,10 @@
     <a-scene embedded arjs>
       <!-- استفاده از مارکر Hiro پیش‌فرض -->
       <a-marker preset="hiro">
-        <!-- یک مکعب 3D -->
-        <a-box color="blue" scale="0.5 0.5 0.5" position="0 0 0" rotation="0 0 0"></a-box>
+        <!-- اشیاء مختلف سه‌بعدی -->
+        <a-box color="blue" scale="0.5 0.5 0.5" position="0 0 0"></a-box>
+        <a-sphere color="red" radius="0.5" position="0 1 0"></a-sphere>
+        <a-cone color="green" radius-bottom="0.5" height="1" position="0 -1 0"></a-cone>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
